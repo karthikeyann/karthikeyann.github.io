@@ -25,6 +25,15 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
+// my script to link
+<script type="text/javascript">
+function gotomini() {
+    var maxi = "aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xNlFwOVJjcU9Mdy1ydmNVTGJlaEhhZEx1";
+    var mapi = "T0hmdEhUd18vdmlldw";
+    var mini = atob(maxi+mapi);
+    window.location.href = mini;
+}
+</script>
 <meta name="google-site-verification" content="4WrF3oJEXB66H1fKlTBSmZ1IjCSR63RZyvhqopNy1-Y" />
 	
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -65,7 +74,7 @@
           <li> <a class="page-scroll" href="#about">About</a> </li>
           <li style="display: none;"> <a class="page-scroll" href="#skills">Skills</a> </li>
           <li> <a class="page-scroll" href="#portfolio">Projects</a> </li>
-          <li> <a class="page-scroll" href="files/RESUME.pdf">Resume</a> </li>
+          <li> <a class="page-scroll" href="javascript:void(0)" onclick="gotomini()">Resume</a> </li>
 	  <li> <a class="page-scroll" href="blog/">Blog</a> </li>
           <li> <a class="page-scroll" href="#contact">Contact</a> </li>
         </ul>
@@ -95,7 +104,7 @@
           <p>My research interests include Machine Learning, Deep Learning, 
 Parallel Computing (CUDA & Multi-core), HW accelerators <!--& Computer Architecture-->
 and EDA Algorithms</p>
-          <p class="text-center"><a class="btn btn-primary" href="files/RESUME.pdf" target="_blank"><i class="fa fa-download"></i> View Resume</a></p>
+          <p class="text-center"><a class="btn btn-primary" href="javascript:void(0)" onclick="gotomini()" ><i class="fa fa-download"></i> View Resume</a></p>
         </div>
       </div>
     </div>
