@@ -749,3 +749,7 @@ header .intro-text {
 	padding: 10px 100px 20px 20px;
 }
 }
+/* hiding elements for safer texts */
+span.custom_encdt b {
+	display: none;
+}
