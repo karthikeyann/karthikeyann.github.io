@@ -40,22 +40,12 @@ p.intro {
 	line-height: 24px;
 	font-family: 'Open Sans', sans-serif;
 }
+/* Link colour: was #4169e1; darkened slightly to meet WCAG AA contrast on #f6f6f6 */
 a {
 	color: #3459c9;
 }
 a:hover, a:focus {
 	color: #3459c9;
-}
-/* Inline text links: thin, offset, translucent underline that firms up on hover */
-.about-text a:not(.btn), .timeline-body a:not(.btn) {
-	text-decoration: underline;
-	text-decoration-thickness: 1px;
-	text-underline-offset: 4px;
-	text-decoration-color: rgba(52, 89, 201, 0.35);
-	transition: text-decoration-color 0.2s ease, color 0.2s ease;
-}
-.about-text a:not(.btn):hover, .about-text a:not(.btn):focus, .timeline-body a:not(.btn):hover, .timeline-body a:not(.btn):focus {
-	text-decoration-color: currentColor;
 }
 ul, ol {
 	list-style: none;
@@ -238,6 +228,8 @@ ol.type li {
 	display: inline-block;
 	margin-left: 20px;
 }
+/* Teal: original light teal was #7bc3d1 (white text on it fails WCAG contrast, 1.98:1).
+   #2c7a87 gives 4.95:1. #7bc3d1 is still used for decorative accents (hr lines, hovers). */
 ol.type li a {
 	display: inline-block;
 	background: #2c7a87;
@@ -466,7 +458,7 @@ display:block;
 #contact {
 	padding: 100px 0 40px 0;
 	color: #fff;
-	background: #2c7a87;
+	background: #2c7a87; /* was #7bc3d1 with dark text #121d1f */
 }
 #contact h2 {
 	color: #fff;
