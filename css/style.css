@@ -34,12 +34,6 @@ h5 {
 	font-weight: 700;
 	line-height: 20px;
 }
-p.intro {
-	font-size: 16px;
-	margin: 12px 0 0;
-	line-height: 24px;
-	font-family: 'Open Sans', sans-serif;
-}
 /* Link colour: was #4169e1; darkened slightly to meet WCAG AA contrast on #f6f6f6 */
 a {
 	color: #3459c9;
@@ -192,21 +186,6 @@ hr {
 }
 .btn-primary i.fa {
 	margin-right: 10px;
-}
-/* Home Section */
-.intro {
-	display: table;
-	width: 100%;
-	height: auto;
-	padding: 100px 0;
-	text-align: center;
-	color: #fff;
-	#background: url(../img/intro_bg_sunset.jpg) no-repeat center top;
-	background-color: #7bc3d1;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
 }
 .section-title.center {
 	padding: 25px 0 45px 0;
@@ -616,35 +595,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 /* Media Queries */
 @media(min-width:768px) {
-.intro {
-	height: 100%;
-	padding: 0;
-	text-align: left;
-	color: #fff;
-}
-.intro H1 {
-	font-size: 60px;
-	font-weight: 500;
-	letter-spacing: -2px;
-}
-.intro .name {
-	font-weight: 600;
-}
-.intro .intro-text {
-	max-width: 75%;
-}
-.intro .intro-text p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
-	margin-bottom: 40px;
-	margin-top: 20px;
-}
 section {
 	padding: 120px 0;
-}
-header .intro-text {
-	padding-top: 300px;
-	padding-bottom: 200px;
 }
 .timeline:before {
 	left: 50%;

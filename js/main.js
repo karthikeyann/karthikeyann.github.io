@@ -18,10 +18,10 @@
     }
   });
 
-  // Affix the navbar after scrolling below the header
+  // Keep the navbar fixed at the top
   $('#nav').affix({
     offset: {
-      top: $('header').height()
+      top: 0
     }
   });
 
