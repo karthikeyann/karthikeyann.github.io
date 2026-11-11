@@ -25,6 +25,10 @@ h3, h4 {
 	font-size: 20px;
 	font-weight: 600;
 }
+#portfolio h3, .timeline h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 h5 {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -37,12 +41,21 @@ p.intro {
 	font-family: 'Open Sans', sans-serif;
 }
 a {
-	color: #4169e1;
+	color: #3459c9;
 }
 a:hover, a:focus {
-	/*text-decoration: none;*//
-    text-decoration: underline;
-	color: #4169e1;
+	color: #3459c9;
+}
+/* Inline text links: thin, offset, translucent underline that firms up on hover */
+.about-text a:not(.btn), .timeline-body a:not(.btn) {
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 4px;
+	text-decoration-color: rgba(52, 89, 201, 0.35);
+	transition: text-decoration-color 0.2s ease, color 0.2s ease;
+}
+.about-text a:not(.btn):hover, .about-text a:not(.btn):focus, .timeline-body a:not(.btn):hover, .timeline-body a:not(.btn):focus {
+	text-decoration-color: currentColor;
 }
 ul, ol {
 	list-style: none;
@@ -226,9 +239,11 @@ ol.type li {
 	margin-left: 20px;
 }
 ol.type li a {
-	background: #7bc3d1;
+	display: inline-block;
+	background: #2c7a87;
 	color: #fff;
-	padding: 6px 14px;
+	padding: 8px 16px;
+	margin: 4px 2px;
 }
 ol.type li a.active {
 	background: #121d1f;
@@ -406,7 +421,7 @@ display:block;
 	text-align: center;
 	background: #fff;
 }
-.timeline>li .timeline-image h4 {
+.timeline>li .timeline-image h3 {
 	margin-top: 20px;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -431,7 +446,7 @@ display:block;
 .timeline>li:last-child {
 	margin-bottom: 40px;
 }
-.timeline .timeline-heading h4 {
+.timeline .timeline-heading h3 {
 	margin-top: 0;
 	text-transform: uppercase;
 	font-size: 16px;
@@ -439,7 +454,7 @@ display:block;
 .timeline .timeline-heading h2 {
 	margin-top: 30px;
 }
-.timeline .timeline-heading h4.subheading {
+.timeline .timeline-heading h3.subheading {
 	text-transform: none;
 	color: #629ca7;
 	font-size: 20px;
@@ -450,8 +465,8 @@ display:block;
 /* Contact Section */
 #contact {
 	padding: 100px 0 40px 0;
-	color: #121d1f;
-	background: #7bc3d1;
+	color: #fff;
+	background: #2c7a87;
 }
 #contact h2 {
 	color: #fff;
@@ -469,7 +484,7 @@ display:block;
 	padding: 30px 0;
 }
 #contact i.fa {
-	color: #121d1f;
+	color: #fff;
 	margin-bottom: 10px;
 }
 #contact .text-danger {
@@ -531,7 +546,7 @@ color: #2c3e50;
 	transition: all 0.5s;
 }
 #contact .social i.fa:hover {
-	color: #121d1f;
+	color: #b9e3ea;
 }
 #contact .btn {
 	background-color: transparent;
@@ -558,7 +573,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Footer Section*/
 #footer {
 	background: #121d1f;
-	color: #7d8384;
+	color: #8a9091;
 	padding: 30px 0 25px 0;
 }
 #footer p {
@@ -622,7 +637,7 @@ header .intro-text {
 	height: 100px;
 	margin-left: -50px;
 }
-.timeline>li .timeline-image h4 {
+.timeline>li .timeline-image h3 {
 	margin-top: 16px;
 	line-height: 18px;
 	font-weight: 400;
@@ -649,7 +664,7 @@ header .intro-text {
 	height: 150px;
 	margin-left: -75px;
 }
-.timeline>li .timeline-image h4 {
+.timeline>li .timeline-image h3 {
 	margin-top: 30px;
 	font-size: 18px;
 	line-height: 26px;
@@ -671,7 +686,7 @@ header .intro-text {
 	height: 150px;
 	margin-left: -75px;
 }
-.timeline>li .timeline-image h4 {
+.timeline>li .timeline-image h3 {
 	margin-top: 40px;
 	font-weight: 400;
 }
@@ -760,5 +775,5 @@ span.custom_encdt b {
 	color: #fff;
 }
 #contactStatus.err {
-	color: #8b0000;
+	color: #ffe0d1;
 }
