@@ -564,6 +564,18 @@ color: #2c3e50;
 #contact .social i.fa:hover {
 	color: #b9e3ea;
 }
+/* X logo (inline SVG; Font Awesome 4.3 has no X icon), sized to match the other icons */
+#contact .social svg.icon-x {
+	width: 26px;
+	height: 26px;
+	margin: 0 5px;
+	vertical-align: -2px;
+	fill: #fff;
+	transition: all 0.5s;
+}
+#contact .social a:hover svg.icon-x {
+	fill: #b9e3ea;
+}
 #contact .btn {
 	background-color: transparent;
 	border: 1px solid #fff;
