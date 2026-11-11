@@ -841,3 +841,96 @@ span.custom_encdt b {
 a.link-strong {
 	font-weight: 600;
 }
+/* Nav: teal underline grows from the centre on hover, and marks the section in view (scrollspy) */
+@media (min-width: 768px) {
+	.navbar-custom .nav li a, .navbar-custom .nav li .nav-btn {
+		position: relative;
+	}
+	.navbar-custom .nav li a::after, .navbar-custom .nav li .nav-btn::after {
+		content: '';
+		position: absolute;
+		left: 15px;
+		right: 15px;
+		bottom: 9px;
+		height: 2px;
+		background: #7bc3d1;
+		transform: scaleX(0);
+		transform-origin: center;
+		transition: transform 0.25s ease;
+	}
+	.navbar-custom .nav li a:hover::after, .navbar-custom .nav li a:focus-visible::after,
+	.navbar-custom .nav li .nav-btn:hover::after, .navbar-custom .nav li .nav-btn:focus-visible::after,
+	.navbar-custom .nav li.active a::after {
+		transform: scaleX(1);
+	}
+	.navbar-custom .nav li.active a {
+		background-color: transparent;
+		color: #fff;
+	}
+}
+/* Impact line (About) */
+ul.impact {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px 0 10px;
+	padding: 0;
+}
+ul.impact li {
+	flex: 1 1 140px;
+	max-width: 190px;
+	padding: 0 10px;
+	text-align: center;
+	border-left: 1px solid #dfe3e4;
+}
+ul.impact li:first-child {
+	border-left: 0;
+}
+ul.impact a, ul.impact a:hover, ul.impact a:focus {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+ul.impact .impact-num {
+	display: block;
+	font-size: 30px;
+	font-weight: 600;
+	color: #121d1f;
+	line-height: 1.2;
+}
+ul.impact a:hover .impact-num, ul.impact a:focus .impact-num {
+	color: #2c7a87;
+}
+ul.impact .impact-label {
+	display: block;
+	font-size: 12.5px;
+	line-height: 1.4;
+	color: #656c6d;
+}
+@media (max-width: 600px) {
+	ul.impact li {
+		flex-basis: 50%;
+		max-width: 50%;
+		margin-bottom: 18px;
+	}
+	ul.impact li:nth-child(odd) {
+		border-left: 0;
+	}
+}
+/* ORCID icon (inline SVG; not in Font Awesome 4.3) */
+#contact .social svg.icon-orcid {
+	width: 28px;
+	height: 28px;
+	margin: 0 5px;
+	vertical-align: -3px;
+}
+#contact .social svg.icon-orcid .orcid-bg {
+	fill: #fff;
+	transition: fill 0.5s;
+}
+#contact .social svg.icon-orcid .orcid-fg {
+	fill: #2c7a87;
+}
+#contact .social a:hover svg.icon-orcid .orcid-bg {
+	fill: #b9e3ea;
+}

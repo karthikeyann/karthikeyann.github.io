@@ -83,6 +83,23 @@
     });
   }
 
+  // Nav: underline the section currently in view. (Replaces Bootstrap scrollspy, which
+  // never reached the last section on high-DPI screens because of fractional scroll
+  // positions.) Sections without a nav item (e.g. Experience) underline nothing.
+  var navLinks = $('#nav .navbar-nav li > a[href^="#"]').filter(function () { return this.hash.length > 1; });
+  var sections = $('#about, #portfolio, #talks, #resume, #contact');
+  var updateNav = function () {
+    var y = window.pageYOffset + 100;
+    var atBottom = window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4;
+    var current = null;
+    sections.each(function () { if ($(this).offset().top <= y) current = this.id; });
+    if (atBottom) current = sections.last().attr('id');
+    navLinks.parent().removeClass('active');
+    if (current) navLinks.filter('[href="#' + current + '"]').parent().addClass('active');
+  };
+  $(window).on('scroll resize load', updateNav);
+  updateNav();
+
   // Lazy autoplay videos (<video data-src>): load and play only when scrolled near,
   // pause when off-screen. Respects "reduce motion" (shows the poster frame only).
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
