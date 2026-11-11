@@ -83,6 +83,26 @@
     });
   }
 
+  // Lazy autoplay videos (<video data-src>): load and play only when scrolled near,
+  // pause when off-screen. Respects "reduce motion" (shows the poster frame only).
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var videos = document.querySelectorAll('video[data-src]');
+  if (videos.length && 'IntersectionObserver' in window && !reduceMotion) {
+    var vObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var v = entry.target;
+        if (entry.isIntersecting) {
+          if (!v.src) v.src = v.getAttribute('data-src');
+          var p = v.play();
+          if (p && p.catch) p.catch(function () { /* autoplay blocked: poster stays */ });
+        } else if (v.src) {
+          v.pause();
+        }
+      });
+    }, { rootMargin: '200px' });
+    Array.prototype.forEach.call(videos, function (v) { vObserver.observe(v); });
+  }
+
   // Portfolio isotope filter
   $(window).on('load', function () {
     var $container = $('.portfolio-items');
