@@ -1,6 +1,9 @@
 (function ($) {
   'use strict';
 
+  // Keep the footer copyright year current
+  $('#year').text(new Date().getFullYear());
+
   // Smooth scroll for in-page nav links
   $('a.page-scroll').on('click', function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
