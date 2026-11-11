@@ -121,6 +121,30 @@ hr {
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
 }
+/* Resume is a <button> (opens the resume via script) styled exactly like the nav links */
+.navbar-custom .nav li .nav-btn {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	background: transparent;
+	border: 0;
+	color: #f4f5f6;
+	font: inherit;
+	line-height: 20px;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.navbar-custom .nav li .nav-btn:hover, .navbar-custom .nav li .nav-btn:focus {
+	color: #7bc3d1;
+	outline: 0;
+}
+@media (min-width: 768px) {
+	.navbar-custom .nav li .nav-btn {
+		width: auto;
+		padding: 15px;
+	}
+}
 .navbar-custom .nav li a:hover {
 	outline: 0;
 	color: #7bc3d1;
