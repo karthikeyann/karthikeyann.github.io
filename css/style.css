@@ -814,3 +814,7 @@ span.custom_encdt b {
 #contact .phone-reveal:hover, #contact .phone-number:hover {
 	color: #b9e3ea;
 }
+/* Emphasised inline link (NVIDIA in About) */
+a.link-strong {
+	font-weight: 600;
+}
