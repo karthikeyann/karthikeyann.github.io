@@ -390,10 +390,12 @@ and EDA Algorithms</p>
        <p><span class="custom_encdt"><i><span style="text-transform:uppercase">l</span></i>x<b>x</b>karth<!-- human !-->i&#064;g<!-- human !-->mai<b>.googo</b>l.com</span>
        </p>
       </div>
-      <div class="col-md-4"> 
-        <script>document.write('<a href="tel:+1'+(2*((9613 * 383509)+900)).toString()+ '">');</script>
-        <i class="fa fa-phone fa-2x"></i>
-          </a><p></p>
+      <!-- Phone: number is assembled only when the visitor clicks (scrapers rarely click) -->
+      <div class="col-md-4" id="phoneBox">
+        <button type="button" class="phone-reveal" id="phoneReveal" aria-label="Show phone number">
+          <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+          <span class="phone-reveal-text">Show phone number</span>
+        </button>
       </div>
       <div class="clearfix"></div>
     </div>

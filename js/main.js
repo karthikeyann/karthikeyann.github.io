@@ -103,6 +103,21 @@
     Array.prototype.forEach.call(videos, function (v) { vObserver.observe(v); });
   }
 
+  // Phone: reveal on click only, so the number never sits in the page for scrapers
+  var phoneBtn = document.getElementById('phoneReveal');
+  if (phoneBtn) {
+    phoneBtn.addEventListener('click', function () {
+      var n = String(2 * ((9613 * 383509) + 900));
+      var pretty = '+1 (' + n.slice(0, 3) + ') ' + n.slice(3, 6) + '-' + n.slice(6);
+      var link = document.createElement('a');
+      link.href = 'tel:+1' + n;
+      link.className = 'phone-number';
+      link.innerHTML = '<i class="fa fa-phone fa-2x" aria-hidden="true"></i><span>' + pretty + '</span>';
+      phoneBtn.parentNode.replaceChild(link, phoneBtn);
+      link.focus();
+    });
+  }
+
   // Portfolio isotope filter
   $(window).on('load', function () {
     var $container = $('.portfolio-items');

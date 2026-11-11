@@ -769,3 +769,24 @@ span.custom_encdt b {
 #contactStatus.err {
 	color: #ffe0d1;
 }
+/* Phone: click-to-reveal button styled like the other contact items */
+#contact .phone-reveal, #contact .phone-number {
+	display: inline-block;
+	background: none;
+	border: 0;
+	padding: 0;
+	color: #fff;
+	font: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+#contact .phone-reveal i.fa, #contact .phone-number i.fa {
+	display: block;
+}
+#contact .phone-reveal-text, #contact .phone-number span {
+	display: block;
+	margin-top: 10px;
+}
+#contact .phone-reveal:hover, #contact .phone-number:hover {
+	color: #b9e3ea;
+}
