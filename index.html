@@ -19,8 +19,11 @@
 <!-- Stylesheet
     ================================================== -->
 <link rel="stylesheet" type="text/css"  href="css/style.css">
-<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<!-- Google Fonts: preconnect + non-render-blocking load; text shows in fallback font until Open Sans arrives -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"></noscript>
 <script type="text/javascript">
 function gotomini() {
     var maxi = "aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xNlFwOVJjcU9Mdy1ydmNVTGJlaEhhZEx1";
@@ -133,7 +136,7 @@ and EDA Algorithms</p>
             <div class="hover-bg"> <a href="http://ieeexplore.ieee.org/document/7084858" target="_blank">
               <div class="hover-text">
                 <small>Accelerated Non-Uniform Discrete Fourier Transform in CUDA</small> </div>
-              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Non-Uniform DFT in GPGPU"> </a> </div>
+              <img src="img/portfolio/06-small.jpg" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Non-Uniform DFT in GPGPU"> </a> </div>
                 <h4>NUDFT in GPU</h4>
           </div>
         </div>
@@ -142,7 +145,7 @@ and EDA Algorithms</p>
             <div class="hover-bg"> <a href="files/FPGA_implementation_of_Singular_Value_Decomposition-oct1.pdf" target="_blank">
               <div class="hover-text">
                 <small>Singular Value Decomposition in FPGA using Jacobi iterative algorithm without using multipliers</small> </div>
-              <img src="img/portfolio/SVD.gif" class="img-responsive" alt="SVD in FPGA"> </a> </div>
+              <img src="img/portfolio/SVD.gif" class="img-responsive" width="360" height="201" loading="lazy" decoding="async" alt="SVD in FPGA"> </a> </div>
                 <h4>SVD in FPGA</h4>
           </div>
         </div>
@@ -151,7 +154,7 @@ and EDA Algorithms</p>
             <div class="hover-bg">  <a href="https://drive.google.com/open?id=0B5VuPGv_TZyyTDB1dC1rcWJWeTA" target="_blank">
               <div class="hover-text">
                 <small>Lossless parallel Turbo decoder in CUDA - 5x speedup</small> </div>
-              <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Turbo Decoder in CUDA"> </a> </div>
+              <img src="img/portfolio/09-small.jpg" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Turbo Decoder in CUDA"> </a> </div>
                 <h4>Lossless GPU Turbo decoder</h4>
           </div>
         </div>
@@ -160,7 +163,7 @@ and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://github.com/karthikeyann/CUDA-Simulated-annealing" target="_blank">
               <div class="hover-text">
                 <small>Simulated Annealing in CUDA for floorplanning</small> </div>
-              <img src="img/portfolio/11-small.png" class="img-responsive" alt="Parallel Simulated Annealing in CUDA"> </a> </div>
+              <img src="img/portfolio/11-small.png" class="img-responsive" width="500" height="298" loading="lazy" decoding="async" alt="Parallel Simulated Annealing in CUDA"> </a> </div>
                 <h4>Simulated Annealing in CUDA for floorplanning</h4>
           </div>
         </div>
@@ -169,7 +172,7 @@ and EDA Algorithms</p>
             <div class="hover-bg"> <a href="files/TMS320C25 processor design Merged_Report_presentation.pdf" target="_blank">
               <div class="hover-text">
                 <small>Course project - TI's DSP processor in Verilog</small> </div>
-              <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="DSP in FPGA"> </a> </div>
+              <img src="img/portfolio/04-small.jpg" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="DSP in FPGA"> </a> </div>
                 <h4>Implementation of simple DSP processor similar to TMS320C25, in FPGA</h4>
           </div>
         </div>
@@ -178,7 +181,7 @@ and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://opencores.org/project,dds_signal_generator" target="_blank">
               <div class="hover-text">
                 <small>Generate sine, square, triangle and any arbitrary signals using Direct Digital Synthesis with LUTs in FPGA</small> </div>
-              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="signal generator FPGA"> </a> </div>
+              <img src="img/portfolio/05-small.jpg" class="img-responsive" width="300" height="300" loading="lazy" decoding="async" alt="signal generator FPGA"> </a> </div>
                 <h4>FPGA implementation of DDS Signal Generator in VHDL</h4>
           </div>
         </div>
@@ -187,7 +190,7 @@ and EDA Algorithms</p>
             <div class="hover-bg"> <a href="http://ieeexplore.ieee.org/document/5738459/" target="_blank">
               <div class="hover-text">
                 <small>Extended SISO CE algorithms to MIMO-OFDM systems</small> </div>
-              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="MIMO OFDM"> </a> </div>
+              <img src="img/portfolio/02-small.jpg" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="MIMO OFDM"> </a> </div>
                 <h4>Improved Channel Estimation for MIMO-OFDM systems</h4>
           </div>
         </div>
@@ -197,7 +200,7 @@ and EDA Algorithms</p>
             <div class="hover-bg"> <a href="files/EFY vc.pdf" target="_blank">
               <div class="hover-text">
                 <small>Published in Electronics For You magazine in Nov 2011</small> </div>
-              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Visitor Counter in MATLAB"> </a> </div>
+              <img src="img/portfolio/01-small.jpg" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Visitor Counter in MATLAB"> </a> </div>
                 <h4>Visitor Counter in MATLAB <a href="https://github.com/karthikeyann/computerised-object-counter" target="_blank">(Github)</a></h4>
           </div>
         </div>
@@ -206,7 +209,7 @@ and EDA Algorithms</p>
             <div class="hover-bg"> <a href="img/portfolio/07-small.jpg" title="Google RE2 regex search implementation in GPU (CUDA)" data-lightbox>
               <div class="hover-text">
                 <small>regex search in GPU (Github)</small> </div>
-              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="regex search in CUDA (under development)"> </a> </div>
+              <img src="img/portfolio/07-small.jpg" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="regex search in CUDA (under development)"> </a> </div>
                 <h4>CUDA grep</h4>
           </div>
         </div>
@@ -215,7 +218,7 @@ and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://drive.google.com/open?id=0B5VuPGv_TZyyZWVsZDN5a2xFZ3JUQXM1MWFkcnZFMTN0T2NR" title="GPU accelerated LTE Simulator" target="_blank">
               <div class="hover-text">
                 <small>Master of Science by Research Thesis</small> </div>
-              <img src="img/portfolio/10-small.jpg" class="img-responsive" alt="GPU LTESim"> </a> </div>
+              <img src="img/portfolio/10-small.jpg" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="GPU LTESim"> </a> </div>
                 <h4>GPU accelerated LTE physical layer simulation (Thesis)</h4>
           </div>
         </div>
@@ -224,7 +227,7 @@ and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://github.com/karthikeyann/SHARP" target="_blank">
               <div class="hover-text">
                 <small>Controlled via Wifi, voice-controlled, NLP, custom Embedded devices, NodeJS</small> </div>
-              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Home Automation"> </a> </div>
+              <img src="img/portfolio/08-small.jpg" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Home Automation"> </a> </div>
                 <h4>Home Automation</h4>
           </div>
         </div>
@@ -233,7 +236,7 @@ and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://github.com/karthikeyann/CreaMed" target="_blank">
               <div class="hover-text">
                 <small>App created for Microsoft Hackathon- Electronic Medical Records synced in cloud, reminders for medicines, appointments etc.</small> </div>
-              <img src="img/portfolio/CreaMed.jpg" class="img-responsive" alt="CreaMed"> </a> </div>
+              <img src="img/portfolio/CreaMed.jpg" class="img-responsive" width="240" height="400" loading="lazy" decoding="async" alt="CreaMed"> </a> </div>
                 <h4>CreaMed - Microsoft Hackathon - <a href="https://github.com/karthikeyann/CreaMed" target="_blank">(Github)</a></h4>
           </div>
         </div>
