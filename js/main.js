@@ -22,6 +22,29 @@
     }
   });
 
+  // Lightbox: open <a data-lightbox href="image"> in a native <dialog>
+  var lightbox = document.getElementById('lightbox');
+  if (lightbox && lightbox.showModal) {
+    var lbImg = lightbox.querySelector('img');
+    var lbCaption = lightbox.querySelector('.lightbox-caption');
+    $(document).on('click', 'a[data-lightbox]', function (e) {
+      e.preventDefault();
+      lbImg.src = this.href;
+      lbImg.alt = $(this).find('img').attr('alt') || '';
+      lbCaption.textContent = this.title || '';
+      lightbox.showModal();
+    });
+    // Close on the X button or on a click outside the image (the backdrop)
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+        lightbox.close();
+      }
+    });
+    lightbox.addEventListener('close', function () {
+      if (!lightbox.open) lbImg.removeAttribute('src');
+    });
+  }
+
   // Portfolio isotope filter
   $(window).on('load', function () {
     var $container = $('.portfolio-items');

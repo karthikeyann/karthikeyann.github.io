@@ -236,7 +236,7 @@ and EDA Algorithms</p>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 gpgpu app">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/07-small.jpg" title="Google RE2 regex search implementation in GPU (CUDA)" target="_blank">
+            <div class="hover-bg"> <a href="img/portfolio/07-small.jpg" title="Google RE2 regex search implementation in GPU (CUDA)" data-lightbox>
               <div class="hover-text">
                 <small>regex search in GPU (Github)</small> </div>
               <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="regex search in CUDA (under development)"> </a> </div>
@@ -502,6 +502,12 @@ and EDA Algorithms</p>
     </div>
   </div>
 </div>
+<!-- Lightbox: any <a href="image" data-lightbox title="caption"> opens here -->
+<dialog id="lightbox" aria-label="Image preview" autofocus>
+  <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+  <img alt="">
+  <p class="lightbox-caption"></p>
+</dialog>
 <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/SmoothScroll.js"></script>
