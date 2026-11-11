@@ -48,6 +48,41 @@
     });
   }
 
+  // Contact form: submit to Formspree in the background, show result inline
+  var form = document.getElementById('contactForm');
+  if (form && window.fetch) {
+    var status = document.getElementById('contactStatus');
+    var button = form.querySelector('button[type="submit"]');
+    var showStatus = function (text, cls) {
+      status.textContent = text;
+      status.className = cls;
+    };
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      button.disabled = true;
+      showStatus('Sending\u2026', '');
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          form.reset();
+          showStatus('Thanks! Your message has been sent.', 'ok');
+        } else {
+          return res.json().then(function (data) {
+            var msg = data && data.errors ? data.errors.map(function (x) { return x.message; }).join(', ') : '';
+            showStatus('Sorry, the message could not be sent' + (msg ? ' (' + msg + ')' : '') + '. Please email me instead.', 'err');
+          });
+        }
+      }).catch(function () {
+        showStatus('Network error. Please try again, or email me instead.', 'err');
+      }).then(function () {
+        button.disabled = false;
+      });
+    });
+  }
+
   // Portfolio isotope filter
   $(window).on('load', function () {
     var $container = $('.portfolio-items');

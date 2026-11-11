@@ -743,3 +743,22 @@ span.custom_encdt b {
 #lightbox .lightbox-close:focus:not(:focus-visible) {
 	outline: none;
 }
+/* Contact form */
+#contact .contact-hp {
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+#contactStatus {
+	min-height: 24px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+#contactStatus.ok {
+	color: #fff;
+}
+#contactStatus.err {
+	color: #8b0000;
+}
