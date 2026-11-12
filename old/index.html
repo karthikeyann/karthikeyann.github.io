@@ -15,7 +15,7 @@
   "@type": "Person",
   "name": "Karthikeyan Natarajan",
   "url": "https://karthikeyann.github.io/",
-  "image": "https://karthikeyann.github.io/img/about.jpg",
+  "image": "https://karthikeyann.github.io/assets/img/prof_pic.jpg",
   "jobTitle": "Senior CUDA Software Engineer",
   "worksFor": { "@type": "Organization", "name": "NVIDIA", "url": "https://www.nvidia.com" },
   "alumniOf": [
@@ -41,7 +41,7 @@
 <meta property="og:site_name" content="Karthikeyan Natarajan">
 <meta property="og:title" content="Karthikeyan Natarajan · Senior CUDA Software Engineer, NVIDIA">
 <meta property="og:description" content="GPU computing, parallel algorithms and analytics libraries in CUDA (RAPIDS). Previously EDA/DFT tools at NVIDIA; M.S. (Research) IIT Madras.">
-<meta property="og:image" content="https://karthikeyann.github.io/img/about.jpg">
+<meta property="og:image" content="https://karthikeyann.github.io/assets/img/prof_pic.jpg">
 <meta property="og:image:width" content="1090">
 <meta property="og:image:height" content="1090">
 <meta property="og:image:alt" content="Photo of Karthikeyan Natarajan">
@@ -51,11 +51,11 @@
 <meta name="twitter:site" content="@lxkarthi">
 <meta name="twitter:title" content="Karthikeyan Natarajan · Senior CUDA Software Engineer, NVIDIA">
 <meta name="twitter:description" content="GPU computing, parallel algorithms and analytics libraries in CUDA (RAPIDS).">
-<meta name="twitter:image" content="https://karthikeyann.github.io/img/about.jpg">
+<meta name="twitter:image" content="https://karthikeyann.github.io/assets/img/prof_pic.jpg">
 
 <!-- Favicons
     ================================================== -->
-<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
 <!-- Bootstrap -->
@@ -106,7 +106,7 @@ function gotomini() {
           <li> <a class="page-scroll" href="#portfolio">Projects</a> </li>
           <li> <a class="page-scroll" href="#talks">Talks</a> </li>
           <li> <button type="button" class="nav-btn" onclick="gotomini()">Resume</button> </li>
-	  <li> <a class="page-scroll" href="blog/">Blog</a> </li>
+	  <li> <a class="page-scroll" href="/blog/">Blog</a> </li>
           <li> <a class="page-scroll" href="#contact">Contact</a> </li>
         </ul>
       </div>
@@ -178,7 +178,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://github.com/NVIDIA/cudf" target="_blank" rel="noopener">
               <div class="hover-text">
                 <small>RAPIDS GPU DataFrame library. Top-15 all-time contributor (1,000+ commits): GPU JSON reader/writer, JIT &amp; UDFs, groupby, reductions, nested types</small> </div>
-              <img src="img/portfolio/cudf.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="cuDF GPU DataFrames"> </a> </div>
+              <img src="/assets/img/projects/cudf.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="cuDF GPU DataFrames"> </a> </div>
                 <h3>cuDF: GPU DataFrame library (RAPIDS)</h3>
           </div>
         </div>
@@ -187,7 +187,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://github.com/facebookincubator/velox/tree/main/velox/experimental/cudf" target="_blank" rel="noopener">
               <div class="hover-text">
                 <small>GPU execution backend for the Velox query engine (Presto, Spark) built on cuDF: GPU operators and device-compatible SQL functions</small> </div>
-              <img src="img/portfolio/velox-cudf.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Velox with cuDF GPU query execution"> </a> </div>
+              <img src="/assets/img/projects/velox-cudf.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Velox with cuDF GPU query execution"> </a> </div>
                 <h3>Velox + cuDF: GPU query execution</h3>
           </div>
         </div>
@@ -197,13 +197,13 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://ieeexplore.ieee.org/document/7084858" target="_blank">
               <div class="hover-text">
                 <small>Accelerated Non-Uniform Discrete Fourier Transform in CUDA</small> </div>
-              <img src="img/portfolio/06-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Non-Uniform DFT in GPGPU"> </a> </div>
+              <img src="/assets/img/projects/06-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Non-Uniform DFT in GPGPU"> </a> </div>
                 <h3>NUDFT in GPU</h3>
           </div>
         </div>
 		<div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="files/FPGA_implementation_of_Singular_Value_Decomposition-oct1.pdf" target="_blank">
+            <div class="hover-bg"> <a href="/assets/pdf/svd-fpga.pdf" target="_blank">
               <div class="hover-text">
                 <small>Singular Value Decomposition in FPGA using Jacobi iterative algorithm without using multipliers</small> </div>
               <video class="img-responsive" width="360" height="200" muted loop playsinline preload="none" poster="img/portfolio/SVD-poster.webp" data-src="img/portfolio/SVD.mp4" aria-label="SVD in FPGA animation"></video> </a> </div>
@@ -215,7 +215,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
             <div class="hover-bg">  <a href="https://doi.org/10.1109/HiPC.2018.00023" target="_blank" rel="noopener">
               <div class="hover-text">
                 <small>Lossless parallel Turbo decoder in CUDA - 5x speedup. Published at IEEE HiPC 2018</small> </div>
-              <img src="img/portfolio/09-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Turbo Decoder in CUDA"> </a> </div>
+              <img src="/assets/img/projects/09-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Turbo Decoder in CUDA"> </a> </div>
                 <h3>Lossless GPU Turbo decoder <a href="https://drive.google.com/open?id=0B5VuPGv_TZyyTDB1dC1rcWJWeTA" target="_blank" rel="noopener">(PDF)</a></h3>
           </div>
         </div>
@@ -224,16 +224,16 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://github.com/karthikeyann/CUDA-Simulated-annealing" target="_blank">
               <div class="hover-text">
                 <small>Simulated Annealing in CUDA for floorplanning</small> </div>
-              <img src="img/portfolio/11-small.webp" class="img-responsive" width="500" height="298" loading="lazy" decoding="async" alt="Parallel Simulated Annealing in CUDA"> </a> </div>
+              <img src="/assets/img/projects/11-small.webp" class="img-responsive" width="500" height="298" loading="lazy" decoding="async" alt="Parallel Simulated Annealing in CUDA"> </a> </div>
                 <h3>Simulated Annealing in CUDA for floorplanning</h3>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="files/TMS320C25 processor design Merged_Report_presentation.pdf" target="_blank">
+            <div class="hover-bg"> <a href="/assets/pdf/tms320c25-dsp-processor.pdf" target="_blank">
               <div class="hover-text">
                 <small>Course project - TI's DSP processor in Verilog</small> </div>
-              <img src="img/portfolio/04-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="DSP in FPGA"> </a> </div>
+              <img src="/assets/img/projects/04-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="DSP in FPGA"> </a> </div>
                 <h3>Implementation of simple DSP processor similar to TMS320C25, in FPGA</h3>
           </div>
         </div>
@@ -242,7 +242,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://opencores.org/project,dds_signal_generator" target="_blank">
               <div class="hover-text">
                 <small>Generate sine, square, triangle and any arbitrary signals using Direct Digital Synthesis with LUTs in FPGA</small> </div>
-              <img src="img/portfolio/05-small.webp" class="img-responsive" width="300" height="300" loading="lazy" decoding="async" alt="signal generator FPGA"> </a> </div>
+              <img src="/assets/img/projects/05-small.webp" class="img-responsive" width="300" height="300" loading="lazy" decoding="async" alt="signal generator FPGA"> </a> </div>
                 <h3>FPGA implementation of DDS Signal Generator in VHDL</h3>
           </div>
         </div>
@@ -251,7 +251,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://ieeexplore.ieee.org/document/5738459/" target="_blank">
               <div class="hover-text">
                 <small>Extended SISO CE algorithms to MIMO-OFDM systems</small> </div>
-              <img src="img/portfolio/02-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="MIMO OFDM"> </a> </div>
+              <img src="/assets/img/projects/02-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="MIMO OFDM"> </a> </div>
                 <h3>Improved Channel Estimation for MIMO-OFDM systems</h3>
           </div>
         </div>
@@ -261,7 +261,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
             <div class="hover-bg"> <a href="files/EFY vc.pdf" target="_blank">
               <div class="hover-text">
                 <small>Published in Electronics For You magazine in Nov 2011</small> </div>
-              <img src="img/portfolio/01-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Visitor Counter in MATLAB"> </a> </div>
+              <img src="/assets/img/projects/01-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Visitor Counter in MATLAB"> </a> </div>
                 <h3>Visitor Counter in MATLAB <a href="https://github.com/karthikeyann/computerised-object-counter" target="_blank">(Github)</a></h3>
           </div>
         </div>
@@ -270,7 +270,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
             <div class="hover-bg"> <a href="img/portfolio/07-small.jpg" title="Google RE2 regex search implementation in GPU (CUDA)" data-lightbox>
               <div class="hover-text">
                 <small>regex search in GPU (Github)</small> </div>
-              <img src="img/portfolio/07-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="regex search in CUDA (under development)"> </a> </div>
+              <img src="/assets/img/projects/07-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="regex search in CUDA (under development)"> </a> </div>
                 <h3>CUDA grep</h3>
           </div>
         </div>
@@ -279,7 +279,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://drive.google.com/open?id=0B5VuPGv_TZyyZWVsZDN5a2xFZ3JUQXM1MWFkcnZFMTN0T2NR" title="GPU accelerated LTE Simulator" target="_blank">
               <div class="hover-text">
                 <small>Master of Science by Research Thesis</small> </div>
-              <img src="img/portfolio/10-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="GPU LTESim"> </a> </div>
+              <img src="/assets/img/projects/10-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="GPU LTESim"> </a> </div>
                 <h3>GPU accelerated LTE physical layer simulation (Thesis)</h3>
           </div>
         </div>
@@ -288,7 +288,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://github.com/karthikeyann/SHARP" target="_blank">
               <div class="hover-text">
                 <small>Controlled via Wifi, voice-controlled, NLP, custom Embedded devices, NodeJS</small> </div>
-              <img src="img/portfolio/08-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Home Automation"> </a> </div>
+              <img src="/assets/img/projects/08-small.webp" class="img-responsive" width="400" height="400" loading="lazy" decoding="async" alt="Home Automation"> </a> </div>
                 <h3>Home Automation</h3>
           </div>
         </div>
@@ -297,7 +297,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
             <div class="hover-bg"> <a href="https://github.com/karthikeyann/CreaMed" target="_blank">
               <div class="hover-text">
                 <small>App created for Microsoft Hackathon- Electronic Medical Records synced in cloud, reminders for medicines, appointments etc.</small> </div>
-              <img src="img/portfolio/CreaMed.webp" class="img-responsive" width="240" height="400" loading="lazy" decoding="async" alt="CreaMed"> </a> </div>
+              <img src="/assets/img/projects/CreaMed.webp" class="img-responsive" width="240" height="400" loading="lazy" decoding="async" alt="CreaMed"> </a> </div>
                 <h3>CreaMed - Microsoft Hackathon - <a href="https://github.com/karthikeyann/CreaMed" target="_blank">(Github)</a></h3>
           </div>
         </div>
@@ -318,7 +318,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
       <div class="col-sm-4">
         <a class="talk-card" href="https://www.youtube.com/watch?v=15ZPPM90wxk" target="_blank" rel="noopener">
           <div class="talk-thumb">
-            <img src="img/talks/15ZPPM90wxk.webp" width="640" height="360" loading="lazy" decoding="async" alt="NVIDIA's work with Velox and HW acceleration (VeloxCon 2026) video thumbnail">
+            <img src="/assets/img/talks/15ZPPM90wxk.webp" width="640" height="360" loading="lazy" decoding="async" alt="NVIDIA's work with Velox and HW acceleration (VeloxCon 2026) video thumbnail">
             <span class="talk-play" aria-hidden="true"><i class="fa fa-play"></i></span>
           </div>
           <h3>NVIDIA's work with Velox and HW acceleration</h3>
@@ -328,7 +328,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
       <div class="col-sm-4">
         <a class="talk-card" href="https://www.youtube.com/watch?v=l1JEo-mTNlw" target="_blank" rel="noopener">
           <div class="talk-thumb">
-            <img src="img/talks/l1JEo-mTNlw.webp" width="640" height="360" loading="lazy" decoding="async" alt="Accelerating Velox with RAPIDS cuDF (VeloxCon 2025) video thumbnail">
+            <img src="/assets/img/talks/l1JEo-mTNlw.webp" width="640" height="360" loading="lazy" decoding="async" alt="Accelerating Velox with RAPIDS cuDF (VeloxCon 2025) video thumbnail">
             <span class="talk-play" aria-hidden="true"><i class="fa fa-play"></i></span>
           </div>
           <h3>Accelerating Velox with RAPIDS cuDF</h3>
@@ -338,7 +338,7 @@ HW accelerators <!--& Computer Architecture--> and EDA Algorithms</p>
       <div class="col-sm-4">
         <a class="talk-card" href="https://www.youtube.com/watch?v=sTcd8L1RWl8" target="_blank" rel="noopener">
           <div class="talk-thumb">
-            <img src="img/talks/sTcd8L1RWl8.webp" width="640" height="360" loading="lazy" decoding="async" alt="SFINAE and its Uses (lightning talk) (CppIndiaCon 2024) video thumbnail">
+            <img src="/assets/img/talks/sTcd8L1RWl8.webp" width="640" height="360" loading="lazy" decoding="async" alt="SFINAE and its Uses (lightning talk) (CppIndiaCon 2024) video thumbnail">
             <span class="talk-play" aria-hidden="true"><i class="fa fa-play"></i></span>
           </div>
           <h3>SFINAE and its Uses (lightning talk)</h3>

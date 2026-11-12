@@ -1,0 +1,196 @@
+---
+layout: about
+title: About
+permalink: /
+subtitle: Senior Software Engineer at <a href='https://developer.nvidia.com/blog/author/knataraj'>NVIDIA</a> · Austin, TX
+
+profile:
+  align: right
+  image: prof_pic.jpg
+  image_circular: true # crops the image to make it circular
+  more_info: >
+    <p>Austin, Texas</p>
+
+selected_papers: false # hidden: the full publications list is a section on this page
+social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: false # news is rendered inside the page content (below), so it sits above the other sections
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 10 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
+---
+<style>
+  /* Venue badges: white text in both light and dark mode. Badge colours in _data/venues.yml are
+     chosen for >= 4.5:1 with white text and >= 3:1 against the dark-mode page background. */
+  .publications ol.bibliography li .abbr abbr.badge, .publications ol.bibliography li .abbr abbr.badge div,
+  .abbr abbr.badge, .abbr abbr.badge div { color: #ffffff !important; }
+  /* Year headings: theme default is nearly invisible (1.2:1); use secondary text colour */
+  .publications h2.bibliography { color: var(--global-text-color-light); }
+</style>
+<style>
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  /* Sections on the single-page home: offset anchors below the fixed navbar */
+  .home-section, #news, #patents, #mentoring { scroll-margin-top: 72px; }
+  .home-section { padding-top: 2.5rem; margin-top: 2.5rem; border-top: 1px solid var(--global-divider-color); }
+  .home-section > .section-title { font-size: 2.25rem; font-weight: 300; margin-bottom: 0.25rem; }
+  .home-section > .section-desc { color: var(--global-text-color); opacity: 0.8; margin-bottom: 1.5rem; }
+  /* Reserve image space before load, so the page does not jump (layout shift) */
+  .profile img { aspect-ratio: 1 / 1; width: 100%; height: auto; }
+  .projects img.card-img-top { aspect-ratio: auto 1 / 1; width: 100%; height: auto; }
+  /* Project category headings: theme dark-mode colour is ~1.7:1 contrast; use secondary text colour */
+  .projects .category { color: var(--global-text-color-light); }
+  /* Footer links are the same grey as the footer text; underline them so they read as links */
+  footer a { text-decoration: underline; }
+  .home-subtitle { font-size: 1.5rem; font-weight: 300; }
+</style>
+
+{% capture bio %}
+I am a Senior Software Engineer at [NVIDIA](https://developer.nvidia.com/blog/author/knataraj), building GPU-accelerated data processing in CUDA: [RAPIDS cuDF](https://github.com/NVIDIA/cudf) and the [cuDF backend for the Velox query engine](https://github.com/facebookincubator/velox/tree/main/velox/experimental/cudf).
+From August 2014 to May 2019, I was a CAD DFT Engineer at NVIDIA, developing deep learning solutions for EDA problems, DFT algorithms, and applied parallel computing.
+
+I did my M.S. (Research) at the [Department of Electrical Engineering](https://www.ee.iitm.ac.in/), [Indian Institute of Technology Madras (IITM)](https://www.iitm.ac.in), where I worked on GPGPU parallel computing, VLSI CAD algorithms, FPGA implementations, and signal processing and communication algorithms.
+
+My research interests include GPU-accelerated Databases, Data Processing, Parallel Computing (CUDA &amp; Multi&#8209;core), Machine Learning, Deep Learning, HW accelerators and EDA Algorithms.
+{% endcapture %}
+{{ bio | markdownify }}
+
+<style>
+  .impact { display: flex; flex-wrap: wrap; justify-content: space-between; list-style: none; margin: 1.5rem 0 0.5rem; padding: 1rem 0; border-top: 1px solid var(--global-divider-color); border-bottom: 1px solid var(--global-divider-color); }
+  .impact li { flex: 1 1 0; min-width: 120px; padding: 0 0.75rem; text-align: center; border-left: 1px solid var(--global-divider-color); }
+  .impact li:first-child { border-left: 0; }
+  .impact a, .impact a:hover { display: block; color: inherit; text-decoration: none; border: 0; }
+  .impact .impact-num { display: block; font-size: 1.75rem; font-weight: 600; line-height: 1.2; color: var(--global-text-color); }
+  .impact a:hover .impact-num { color: var(--global-theme-color); }
+  .impact .impact-label { display: block; font-size: 0.8rem; line-height: 1.35; color: var(--global-text-color); opacity: 0.72; }
+  .impact, .impact li { box-sizing: border-box; }
+  @media (max-width: 576px) {
+    .impact { clear: both; width: 100%; }
+    .impact li { flex: 0 0 50%; min-width: 0; margin: 0.5rem 0; }
+    .impact li:nth-child(odd) { border-left: 0; }
+  }
+</style>
+<ul class="impact">
+  <li><a href="https://github.com/NVIDIA/cudf/graphs/contributors"><span class="impact-num">1,000+</span><span class="impact-label">commits to cuDF<br>top-15 contributor</span></a></li>
+  <li><a href="#patents"><span class="impact-num">3</span><span class="impact-label">US patents<br>granted</span></a></li>
+  <li><a href="#publications"><span class="impact-num">6</span><span class="impact-label">publications<br>incl. DAC, VLDB</span></a></li>
+  <li><a href="https://scholar.google.com/citations?user=expWuNMAAAAJ"><span class="impact-num">240+</span><span class="impact-label">citations<br>Google Scholar</span></a></li>
+</ul>
+
+<h2 id="news"><a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a></h2>
+{% include news.liquid limit=true %}
+
+<section id="publications" class="home-section">
+  <h2 class="section-title">Publications</h2>
+  <p class="section-desc">Publications and patents in reverse chronological order.</p>
+  {% include home/publications.liquid %}
+</section>
+
+<section id="talks" class="home-section">
+  <h2 class="section-title">Talks</h2>
+  <p class="section-desc">Conference talks and GPU hackathon mentoring.</p>
+  {% include home/talks.liquid %}
+</section>
+
+<section id="writing" class="home-section">
+  <h2 class="section-title">Writing</h2>
+  <p class="section-desc">Articles on the NVIDIA Technical Blog.</p>
+  {% include home/writing.liquid %}
+</section>
+
+<section id="projects" class="home-section">
+  <h2 class="section-title">Projects</h2>
+  <p class="section-desc">Open-source GPU data processing work, and earlier projects in GPU computing, signal processing and FPGA design.</p>
+  {% include home/projects.liquid %}
+</section>
+
+<script>
+  // Single-page navigation: menu links scroll to sections on this page and the
+  // current section is highlighted. Other pages reach sections via /publications/ etc.,
+  // which redirect instantly to /#publications.
+  (function () {
+    var ids = ["publications", "talks", "writing", "projects"];
+    // The publications filter box (theme bibsearch.js) reads the URL #hash as a search term,
+    // on page load and on every hashchange. Disable that: the box filters only on typing.
+    // 1) On load: hide the hash before the filter reads it (DOMContentLoaded), then scroll to
+    //    the target and restore the hash with replaceState (which fires no hashchange).
+    var pending = location.hash.slice(1);
+    if (pending) {
+      history.replaceState(null, "", location.pathname + location.search);
+      window.addEventListener("load", function () {
+        var el = document.getElementById(decodeURIComponent(pending));
+        if (el) el.scrollIntoView();
+        history.replaceState(null, "", "#" + pending);
+      });
+    }
+    // 2) Later hash changes: this listener is registered before the filter's, so it can stop
+    //    the event from reaching it. Normal anchor scrolling is unaffected.
+    window.addEventListener("hashchange", function (e) { e.stopImmediatePropagation(); });
+    var anchors = ids.concat(["news", "patents", "mentoring"]);
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest('a[href^="#"]');
+      if (!a) return;
+      var id = a.getAttribute("href").slice(1);
+      if (anchors.indexOf(id) === -1) return;
+      var el = document.getElementById(id);
+      if (!el) return;
+      e.preventDefault();
+      el.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      history.replaceState(null, "", "#" + id);
+    });
+    var items = [];
+    document.querySelectorAll("#navbar .navbar-nav > li.nav-item > a.nav-link").forEach(function (a) {
+      var path = a.getAttribute("href");
+      var id = null;
+      if (path === "/") id = "top";
+      else ids.forEach(function (s) { if (path === "/" + s + "/") id = s; });
+      if (!id) return;
+      a.setAttribute("href", id === "top" ? "#" : "#" + id);
+      items.push({ id: id, li: a.parentElement });
+      a.addEventListener("click", function (e) {
+        if (id === "top") { e.preventDefault(); window.scrollTo({ top: 0 }); history.replaceState(null, "", location.pathname); }
+        var menu = document.getElementById("navbarNav");
+        var toggler = document.querySelector(".navbar-toggler-main");
+        if (menu && toggler && menu.classList.contains("show")) toggler.click();
+      });
+    });
+    function update() {
+      var y = window.pageYOffset + 120, current = "top";
+      ids.forEach(function (s) { var el = document.getElementById(s); if (el && el.getBoundingClientRect().top + window.pageYOffset <= y) current = s; });
+      if (window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4) current = ids[ids.length - 1];
+      items.forEach(function (it) { it.li.classList.toggle("active", it.id === current); });
+    }
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Karthikeyan Natarajan",
+  "url": "https://karthikeyann.github.io/",
+  "image": "https://karthikeyann.github.io/assets/img/prof_pic.jpg",
+  "jobTitle": "Senior Software Engineer",
+  "worksFor": { "@type": "Organization", "name": "NVIDIA", "url": "https://www.nvidia.com" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Madras", "url": "https://www.iitm.ac.in" },
+    { "@type": "CollegeOrUniversity", "name": "Amrita Vishwa Vidyapeetham" }
+  ],
+  "knowsAbout": ["GPU-accelerated databases", "Data processing", "CUDA", "Parallel computing", "RAPIDS cuDF", "Velox", "Presto", "EDA algorithms"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Austin", "addressRegion": "TX", "addressCountry": "US" },
+  "sameAs": [
+    "https://github.com/karthikeyann",
+    "https://www.linkedin.com/in/karthikeyan90",
+    "https://scholar.google.com/citations?user=expWuNMAAAAJ",
+    "https://orcid.org/0009-0008-6240-2335",
+    "https://x.com/lxkarthi",
+    "https://developer.nvidia.com/blog/author/knataraj"
+  ]
+}
+</script>

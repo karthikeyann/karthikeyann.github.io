@@ -1,0 +1,13 @@
+{% assign display_categories = "open source,earlier work" | split: "," %}
+<div class="projects">
+  {% for category in display_categories %}
+    <h3 class="category home-subtitle">{{ category | capitalize }}</h3>
+    {% assign categorized_projects = site.projects | where: "category", category %}
+    {% assign sorted_projects = categorized_projects | sort: "importance" %}
+    <div class="row row-cols-1 row-cols-md-3">
+      {% for project in sorted_projects %}
+        {% include projects.liquid %}
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>{{ page.title }} · {{ site.first_name }} {{ site.last_name }}</title>
+{% unless include.target contains "://" %}<link rel="canonical" href="{{ site.url }}{{ include.target }}">{% endunless %}
+<meta http-equiv="refresh" content="0; url={{ include.target }}">
+<script>location.replace({{ include.target | jsonify }} + location.search);</script>
+</head>
+<body><p><a href="{{ include.target }}">Continue to {{ page.title }}</a></p></body>
+</html>

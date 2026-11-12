@@ -1,0 +1,19 @@
+<p>See also my <a href="https://scholar.google.com/citations?user=expWuNMAAAAJ">Google Scholar profile</a>.</p>
+
+<!-- Bibsearch Feature (the home page script keeps section #hashes out of this filter) -->
+
+{% include bib_search.liquid %}
+
+<div class="publications">
+
+{% bibliography %}
+
+</div>
+
+<h3 class="mt-5 home-subtitle" id="patents">Patents</h3>
+
+<div class="publications">
+
+{% bibliography --file patents --group_by none %}
+
+</div>

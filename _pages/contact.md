@@ -1,10 +1,10 @@
 ---
 layout: page
-title: contact
+title: Contact
 permalink: /contact/
 description: Send me a message.
 nav: true
-nav_order: 7
+nav_order: 6
 ---
 
 <style>
