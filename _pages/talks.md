@@ -1,0 +1,71 @@
+---
+layout: page
+permalink: /talks/
+title: talks
+description: Conference talks and GPU hackathon mentoring.
+nav: true
+nav_order: 3
+---
+
+<div class="talk-grid">
+  <div class="talk">
+    <a href="https://www.youtube.com/watch?v=15ZPPM90wxk" target="_blank" rel="noopener">
+      {% include figure.liquid loading="lazy" path="assets/img/talks/15ZPPM90wxk.webp" class="img-fluid rounded z-depth-1" alt="NVIDIA's work with Velox and HW acceleration (VeloxCon 2026)" %}
+    </a>
+    <h6 class="mt-2 mb-0"><a href="https://www.youtube.com/watch?v=15ZPPM90wxk" target="_blank" rel="noopener">NVIDIA's work with Velox and HW acceleration</a></h6>
+    <p class="text-muted small">VeloxCon 2026 · April 29, 2026 · Meta HQ, Menlo Park · Video</p>
+  </div>
+  <div class="talk">
+    <a href="https://www.youtube.com/watch?v=l1JEo-mTNlw" target="_blank" rel="noopener">
+      {% include figure.liquid loading="lazy" path="assets/img/talks/l1JEo-mTNlw.webp" class="img-fluid rounded z-depth-1" alt="Accelerating Velox with RAPIDS cuDF (VeloxCon 2025)" %}
+    </a>
+    <h6 class="mt-2 mb-0"><a href="https://www.youtube.com/watch?v=l1JEo-mTNlw" target="_blank" rel="noopener">Accelerating Velox with RAPIDS cuDF</a></h6>
+    <p class="text-muted small">VeloxCon 2025 · April 15–16, 2025 · Meta HQ, Menlo Park · Video</p>
+  </div>
+  <div class="talk">
+    <a href="https://www.youtube.com/watch?v=sTcd8L1RWl8" target="_blank" rel="noopener">
+      {% include figure.liquid loading="lazy" path="assets/img/talks/sTcd8L1RWl8.webp" class="img-fluid rounded z-depth-1" alt="SFINAE and its Uses (CppIndiaCon 2024)" %}
+    </a>
+    <h6 class="mt-2 mb-0"><a href="https://www.youtube.com/watch?v=sTcd8L1RWl8" target="_blank" rel="noopener">SFINAE and its Uses (lightning talk)</a></h6>
+    <p class="text-muted small">CppIndiaCon 2024 · August 23–24, 2024 · Online · Video</p>
+  </div>
+</div>
+
+<h2 class="mt-4" id="mentoring">mentoring</h2>
+
+<table class="table table-sm table-borderless">
+  <tbody>
+    <tr>
+      <th scope="row" style="width: 20%">Sep 2021</th>
+      <td><strong>NASA GPU Hackathon</strong>: primary GPU mentor for team BingoBros (<a href="https://github.com/nasa/bingo" target="_blank" rel="noopener">nasa/bingo</a>)</td>
+    </tr>
+    <tr>
+      <th scope="row">Aug 2021</th>
+      <td><strong>C-DAC HPC Hackathon 2021</strong>: CUDA mentor</td>
+    </tr>
+    <tr>
+      <th scope="row">Sep 2018</th>
+      <td><strong>C-DAC GPU Hackathon</strong>, Pune: CUDA mentor</td>
+    </tr>
+  </tbody>
+</table>
+
+<style>
+  /* Grid instead of Bootstrap .row: no negative margins, so no horizontal scroll.
+     New talks wrap onto the next row automatically. */
+  .talk-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 767.98px) {
+    .talk-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 479.98px) {
+    .talk-grid { grid-template-columns: minmax(0, 1fr); }
+  }
+  .talk figure { margin-bottom: 0; }
+  .talk img { width: 100%; height: auto; }
+  .talk p { margin-bottom: 0; }
+</style>

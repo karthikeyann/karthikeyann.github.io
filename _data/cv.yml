@@ -1,0 +1,56 @@
+cv:
+  name: Karthikeyan Natarajan
+  label: Senior Software Engineer, NVIDIA
+  location: Austin, TX
+  image: ""
+  summary: Senior Software Engineer at NVIDIA building GPU-accelerated data processing in CUDA (RAPIDS cuDF and the cuDF backend for Velox).
+
+  social_networks:
+    - network: GitHub
+      username: karthikeyann
+    - network: LinkedIn
+      username: karthikeyan90
+    - network: X
+      username: lxkarthi
+
+  sections:
+    Experience:
+      - company: NVIDIA
+        position: Senior CUDA Software Engineer
+        location: Austin, TX
+        start_date: 2019-05
+        end_date: present
+        summary: GPU-accelerated data processing libraries in CUDA (RAPIDS cuDF; cuDF backend for the Velox query engine).
+
+      - company: NVIDIA
+        position: CAD DFT Engineer
+        start_date: 2014-08
+        end_date: 2019-05
+        summary: Developed and maintained ATPG flow and scan insertion DFT tools used for more than 10 NVIDIA chips; deep learning solutions for EDA problems.
+
+      - company: Soliton Technologies
+        position: Project Engineer
+        start_date: 2011-06
+        end_date: 2011-11
+        summary: Developed LabVIEW applications using National Instruments DAQ equipment.
+
+    Education:
+      - institution: Indian Institute of Technology Madras
+        url: https://www.iitm.ac.in
+        area: Electrical Engineering
+        studyType: Master of Science by Research
+        start_date: 2012
+        end_date: 2014
+        score: "CGPA 9.6/10"
+        highlights:
+          - "CGPA 9.6/10"
+          - "Thesis: GPU acceleration of LTE physical layer simulation"
+
+      - institution: Amrita Vishwa Vidyapeetham
+        area: Electronics and Communication Engineering
+        studyType: Bachelor of Technology
+        start_date: 2007
+        end_date: 2011
+        score: "CGPA 8.89/10, passed with distinction"
+        highlights:
+          - "CGPA 8.89/10, passed with distinction"

@@ -1,0 +1,31 @@
+---
+layout: page
+permalink: /writing/
+title: writing
+description: Articles on the NVIDIA Technical Blog.
+nav: true
+nav_order: 4
+---
+
+All my posts are on my [NVIDIA Developer author page](https://developer.nvidia.com/blog/author/knataraj).
+
+<table class="table table-sm table-borderless">
+  <tbody>
+    <tr>
+      <th scope="row" style="width: 20%">Jul 8, 2026</th>
+      <td><a href="https://developer.nvidia.com/blog/running-low-latency-analytical-workloads-with-gpu-accelerated-presto-on-nvidia-gb200-nvl72/">Running Low-Latency Analytical Workloads with GPU-Accelerated Presto on NVIDIA GB200 NVL72</a> <span class="text-muted">(co-author)</span></td>
+    </tr>
+    <tr>
+      <th scope="row">Feb 20, 2025</th>
+      <td><a href="https://developer.nvidia.com/blog/json-lines-reading-with-pandas-100x-faster-using-nvidia-cudf/">JSON Lines Reading with pandas 100x Faster Using NVIDIA cuDF</a></td>
+    </tr>
+    <tr>
+      <th scope="row">Dec 15, 2023</th>
+      <td><a href="https://developer.nvidia.com/blog/streamline-etl-workflows-with-nested-data-types-in-rapids-libcudf/">Streamline ETL Workflows with Nested Data Types in RAPIDS libcudf</a></td>
+    </tr>
+    <tr>
+      <th scope="row">Feb 9, 2023</th>
+      <td><a href="https://developer.nvidia.com/blog/gpu-accelerated-json-data-processing-with-rapids/">GPU-Accelerated JSON Data Processing with RAPIDS</a></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,23 @@
+# Badge colours: mid-tones chosen so white badge text is >= 4.5:1 AND the badge
+# stays visible on the dark-mode background (>= 3:1). Avoid near-black/navy.
+"HiPC":
+  url: https://hipc.org/
+  color: "#b8452e"
+
+"NCC":
+  color: "#2c7a87"
+
+"ICDeCom":
+  color: "#8b4dff"
+
+"ADMS":
+  color: "#4f7a00"
+
+"DAC":
+  color: "#3569c4"
+
+"ICETECT":
+  color: "#8b4dff"
+
+"US Patent":
+  color: "#68737d"
