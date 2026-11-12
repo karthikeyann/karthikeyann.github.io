@@ -55,7 +55,7 @@ My research interests include GPU-accelerated Databases, Data Processing, Parall
 </style>
 <ul class="impact">
   <li><a href="https://github.com/NVIDIA/cudf/graphs/contributors"><span class="impact-num">1,000+</span><span class="impact-label">commits to cuDF<br>top-15 contributor</span></a></li>
-  <li><a href="/publications/#patents"><span class="impact-num">2</span><span class="impact-label">US patents<br>granted</span></a></li>
+  <li><a href="/publications/#patents"><span class="impact-num">3</span><span class="impact-label">US patents<br>granted</span></a></li>
   <li><a href="/publications/"><span class="impact-num">6</span><span class="impact-label">publications<br>incl. DAC, VLDB</span></a></li>
   <li><a href="https://scholar.google.com/citations?user=expWuNMAAAAJ"><span class="impact-num">240+</span><span class="impact-label">citations<br>Google Scholar</span></a></li>
 </ul>
